@@ -1,5 +1,4 @@
-# AWS
-AWS cloud projects repo
+# AWS-Projects
 
 
 Cloud Computing is the on-demand availability of computing services especially servers, data storage, networking and computing power without direct active management by the user. It is renting resources on another company's computers which is only paid for what is used.
