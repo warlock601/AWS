@@ -31,4 +31,4 @@ Note: Change the region in CloudWatch to N.Virginia (us-east-1) as it works only
 
 ![Screenshot 2023-10-19 141601](https://github.com/warlock601/AWS/assets/32487715/38f5e310-8d63-4b81-b93b-d6e98194a3b9)
 
-Now we need to create an S3 bucket and then export these logs to that S3 bucket for storing and access them later. Let's go to S3 section.
+Now we need to create an S3 bucket and then export these logs to that S3 bucket for storing and access them later. Let's go to [S3 section](https://github.com/warlock601/AWS/tree/bcbdcce36c486fd7942fc40eab4cd56c4f3d743c/Logging%2C%20Monitoring%20and%20Storage%20solution%20for%20EC2%20instances/S3)
