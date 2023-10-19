@@ -4,7 +4,7 @@
 - Connect to the instance using either terminal or EC2 instance connect.
 
 Note: Before Installing thus, create an IAM role with appropriate permissions (check it out [here](https://github.com/warlock601/AWS/tree/f1f1007c71278027256bf98443dcbac9b08a5c68/Logging%2C%20Monitoring%20and%20Storage%20solution%20for%20EC2%20instances/IAM%20role) )
-### Also enable the detailed monitoring for EC2 instance.
+### Also enable the detailed monitoring for EC2 instance. (After you enable detailed monitoring, the Amazon EC2 console displays monitoring graphs with a 1-minute period for the instance.)
 ![Screenshot 2023-10-19 001904](https://github.com/warlock601/AWS/assets/32487715/64fb26c1-f675-4eba-981e-823707dec664)
 
 ### 2. Installing AWS Cloudwatch logs agent on the instance-
@@ -26,3 +26,9 @@ Note: Before Installing thus, create an IAM role with appropriate permissions (c
   sudo systemctl enable awslogsd.service
   sudo systemctl status awslogsd
 ```
+### 5. Now open CloudWatch and there you'll see that there's a log group created automatically.
+Note: Change the region in CloudWatch to N.Virginia (us-east-1) as it works only for that region by default.
+
+![Screenshot 2023-10-19 141601](https://github.com/warlock601/AWS/assets/32487715/38f5e310-8d63-4b81-b93b-d6e98194a3b9)
+
+Now we need to create an S3 bucket and then export these logs to that S3 bucket for storing and access them later. Let's go to S3 section.
