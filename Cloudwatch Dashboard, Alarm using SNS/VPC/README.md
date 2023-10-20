@@ -17,3 +17,6 @@ Create a VPC and specify IPv4 CIDR block- 10.0.0.0/24
 NOTE: We'll attach an Elastic IP to this instance otherwise we won't to able to connect to this instance through EC2 connect as it does now have any public IPv4 address.
 
 ![Screenshot 2023-10-20 141319](https://github.com/warlock601/AWS/assets/32487715/d5b82bd8-08c0-446f-a441-aafac1b5a240)
+
+
+Let's proceed to [CloudWatch section](https://github.com/warlock601/AWS/blob/d65436fef57f95574db117b7f0f5cc773fdf9698/Cloudwatch%20Dashboard%2C%20Alarm%20using%20SNS/CloudWatch/README.md)
