@@ -21,3 +21,11 @@
     foreign key (product_id) references product(product_id)
    )
    ```
+Open RDS, create database with the following specifications:
+- Engine Type: Aurora (MySQL Compatible)  
+- Template: Dev/Test
+- DB Cluster identifier: Demodatabase
+- DB Instance classes: Bustable classes (db.t3.medium)
+- Under Multi-AZ deployment, select Don't create an Aurora Read Replica
+- Compute Resource: Don’t connect to an EC2 compute resource, Network Type as IPv4, Subnet group: Default, VPC Security Group: Default
+- Expand Additional Configuration, Initial Database Name: productreview and then Create Database
