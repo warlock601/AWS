@@ -1,5 +1,24 @@
-# Web App to Manage Product Reviews using API Gateway, Aurora, and RDS proxy
+# Micro-service to Manage Product Reviews using API Gateway, Aurora, and RDS proxy
+## Overview:
+An Organization's applications are currently hosted on on-premises servers, and the
+application traffic is unpredictable. So, they often end up with idling servers or
+over-utilized servers. As part of the cloud migration, the org is looking at a cloud-
+native solution that can dynamically scale based on traffic. They also want to
+minimize expenses when there is no application traffic. Their team is new to
+AWS cloud, they want to build a proof-of-concept application and learn from it. <br/>
+You will build a micro-service for managing products and reviews. You will use
+API Gateway as the "front door" Lambda for the application logic, and Aurora
+Relational database for data storage. For hosting the web page, you will use
+Amazon S3.
+The web page must use client-side JavaScript to interact with your API
+Gateway. For connection-pooling, your Lambda function must use RDS Proxy to
+talk to the database. You should maintain the database login credentials in AWS
+Secrets Manager, and RDS Proxy must use these credentials to connect to the
+database. Your Lambda function would acquire a connection from RDS Proxy
+using IAM Role. In this solution, only Aurora is server-based, and the rest of the
+application uses serverless technologies.
 
+### Steps:
  1. Create a Database and in that create 2 tables namely Product and Review where Review table references Product.
    ```bash
    create table product(
