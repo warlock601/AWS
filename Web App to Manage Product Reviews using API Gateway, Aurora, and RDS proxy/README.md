@@ -36,10 +36,11 @@ Open Secrets Manager, click on "Store a new secret"
 
 In RDS Console, Click on Proxies > Create Proxy
 - Enter Proxy identifier as "productreviewproxy"
-- Select the database which was created earlier.
+- Select the database which was created earlier
 - In Authentication, Create IAM role, select the secret: productreview/demo/admin
 - For IAM Authentication, select Required
-- For Subnets, select all the default subnets.
+- For Subnets, select all the default subnets
+- Under Connectivity, check "Require Transport Layer Security"
 - Additional Connectivity configuration > choose the default VPC security group
   
   
