@@ -61,5 +61,15 @@ In RDS Console, Click on Proxies > Create Proxy
 - For Subnets, select all the default subnets
 - Under Connectivity, check "Require Transport Layer Security"
 - Additional Connectivity configuration > choose the default VPC security group
+
+Create a Lambda Layer. Lambda layers are created to reduce the size of your deployment packages and to separate core function logic from dependencies.
+- First save the "layer+pymsql.zip" on your local system
+- Open lambda Console > Layers > Create Layer, name it as layer-pymsql
+- Upload a zip file > Upload "Layer_pymsql.zip"
+- Compatible Runtimes: Python 3.7 & Python 3.8, then Create Layer
+- Now create an IAM role for Lambda function, Select AWS service & then select Lambda as use case
+- Attach Policies > AWSLambdaBasicExecutionRole & AWSLambdaVPCAccessExecutionRole (These policies will allow Lambda to log & run inside a VPC)  
+
+Create a Lambda Function and select the role we created as the default execution role
   
   
