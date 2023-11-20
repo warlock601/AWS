@@ -71,5 +71,7 @@ Create a Lambda Layer. Lambda layers are created to reduce the size of your depl
 - Attach Policies > AWSLambdaBasicExecutionRole & AWSLambdaVPCAccessExecutionRole (These policies will allow Lambda to log & run inside a VPC)  
 
 Create a Lambda Function and select the role we created as the default execution role
+- Author From Scratch, Runtime- Python 3.8
+- Advanced Settings, Enable VPC > choose default VPC, Subnets > Choose all available subnets, & choose default VPC Security Group 
   
   
